@@ -6,7 +6,7 @@ namespace Proj
 {
     public partial class Form1 : Form
     {
-        private NotebookService _NotebookService ;
+        private NotebookService _NotebookService;
         private UserService _userService;
 
         public Form1()
@@ -17,12 +17,37 @@ namespace Proj
             _userService = new UserService(context);
         }
 
-        private List<PC> getPCDataForGrid(PcFiltrEnum pcFiltr = PcFiltrEnum.None) 
+        private List<PC> getPCDataForGrid(PcFiltrEnum pcFiltr = PcFiltrEnum.None)
         {
             return _NotebookService
                 .getAllNotebooks(pcFiltr);
         }
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
